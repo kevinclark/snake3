@@ -20,5 +20,5 @@ class Handler(WebSocketHandler):
                 print "Connection closed."
 
 print "Server started."
-HTTPServer(Application([("/", Handler)])).listen(8888)
+HTTPServer(Application([("/", Handler)], debug=True)).listen(8888)
 IOLoop.instance().start()
