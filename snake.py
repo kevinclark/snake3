@@ -20,9 +20,9 @@ class Snake:
         self.dir = direction
 
     def draw(self, canvas):
-        canvas.put_char(self.head, "H")
         for t in self.tail:
             canvas.put_char(t, "T")
+        canvas.put_char(self.head, "H")
 
     def move(self):
         self.tail.insert(0, self.head)
