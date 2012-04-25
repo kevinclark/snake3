@@ -27,4 +27,19 @@ web server:
     ~/projects/snake3$ ./run
     Server started.
 
+5. Open `snake.html` in Chrome; you should see just a single
+"H" in the middle of the screen.  This is your snake!
+
+6. Finally, open `snake.py` in your editor; this is where we'll write
+your Python code!  Here's what it looks like now:
+
+    from canvas import *
+    from snake_lib import *
+    
+    #### YOUR CODE GOES HERE:
+    
+    snake = Snake((WIDTH / 2, HEIGHT / 2))
+    def move(direction):
+        draw(snake)
+
 [2]: https://github.com/ruggeri/snake3
