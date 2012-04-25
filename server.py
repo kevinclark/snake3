@@ -9,7 +9,7 @@ from tornado.websocket import WebSocketHandler
 
 class Handler(WebSocketHandler):
         def open(self):
-                print "New connection opened."
+                print("New connection opened.")
 
         def on_message(self, message):
                 message = json.loads(message)
@@ -17,8 +17,8 @@ class Handler(WebSocketHandler):
                 self.write_message(response)
 
         def on_close(self):
-                print "Connection closed."
+                print("Connection closed.")
 
-print "Server started."
+print("Server started.")
 HTTPServer(Application([("/", Handler)], debug=True)).listen(8888)
 IOLoop.instance().start()
