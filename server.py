@@ -2,6 +2,7 @@
 
 import json
 from snake import *
+from snake_lib import *
 from tornado.httpserver import HTTPServer
 from tornado.ioloop import IOLoop
 from tornado.web import Application
@@ -13,7 +14,7 @@ class Handler(WebSocketHandler):
 
         def on_message(self, message):
                 message = json.loads(message)
-                response = m(message)
+                response = m(message, move)
                 self.write_message(response)
 
         def on_close(self):
