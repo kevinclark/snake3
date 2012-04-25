@@ -186,3 +186,73 @@ run the body 30 times, for `y = 0`, `y = 1`, `y = 2`, for each of the
 heights.
 
 Can you add loops to print the other three borders?
+
+## Defining functions and blinking text
+
+So far we've ignored the line `def move(direction):`.  This is defines
+our own function, `move`; so far we've been editing the body.  `move`
+takes a single option, `direction`, which we haven't used yet.
+
+Our program basically consists of a loop that looks like this:
+
+1. Read some keys from the keyboard
+2. Decide which direction to move the snake in
+3. Clear the grid
+4. Call our `move` function, giving us the direction to move
+  * We use put_char to add characters to the grid
+5. Print the grid out
+6. Pause a few moments
+7. Repeat from step 1
+
+Let's see this in action.  We'll change our `move` function so that it
+wil only print "Hello!" every other time through the loop.  That will
+make it look like "Hello!" is blinking.
+
+Here's how to do it:
+
+    BLINK = True
+    def move(direction):
+        hello_list = ['H', 'E', 'L', 'L', 'O', '!']
+        global BLINK
+        
+        if BLINK:
+            BLINK = False
+            
+            x = 5
+            y = 5
+            for letter in hello_list:
+                put_char((x,y), letter)
+                x = x + 1
+        else:
+            BLINK = True
+
+We use `if` and `else` for the first time here.  The first part of the
+`if` runs only if `BLINK` is `True`, otherwise, the `else` part is
+run.
+
+How does this work?  `BLINK` starts out as `True`, so we first enter
+the `if` part.  This part sets `BLINK` to false for the next time
+around, and prints "HELLO".  The second time around, `BLINK` is False,
+so we run the `else:` part.  This doesn't print anything, but it does
+set `BLINK` back to `True`.  We then repeat the process.
+
+You can ignore the line `global BLINK`.  We have to write this because
+`BLINK` is first defined outside of the function `move`.  Python
+complains if we leave it out.
+
+Time for a challenge problem!  Instead of blinking the whole word
+"Hello!", try printing a different letter each time `move` is called.
+Instead of setting `BLINK` to `True` or `False`, set it to the
+position of the letter to print in the list.  Each time print the next
+letter.
+
+You'll need to be able to get an item from a list.  Here's how to do
+it:
+
+    >>> letters = ['a', 'b', 'c']
+    >>> letters[0]
+    'a'
+    >>> letters[1]
+    'b'
+    >>> letters[2]
+    'c'
