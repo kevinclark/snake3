@@ -112,3 +112,47 @@ list.
 
 Okay!  Now you try!  Use a for loop in IDLE to greet some of your
 friends!
+
+## Back to hello_list
+
+Let's take another look at the code in `snake.py`.
+
+    def move(direction):
+        hello_list = ['H', 'E', 'L', 'L', 'O', '!']
+        
+        x = 5
+        y = 5
+        for letter in hello_list:
+            put_char((x,y), letter)
+            x = x + 1
+
+The key here is the function `put_char`.  This prints a letter, or
+*character* at a specific location.  The location is a point in the
+*grid*.  Here's an example of a grid:
+
+     0 1 2 3 4 5
+    0
+    1
+    2          Q
+    3
+    4    P
+    5      R
+
+This is a five-by-five grid; I've marked three points: `P`, `Q`, and
+`Q`.  `P` is two columns over and four rows down; we say that it is at
+position `(4, 2)`.  `Q` is 5 columns over and 2 rows down; we say its
+position is `(5, 2)`.  What position is `R` at.
+
+We can tell our program where to draw letters by giving `put_char` a
+position and a letter; let's look closely at
+
+     put_char((x,y), letter)
+
+The first bit, `(x,y)` is the position; `x` and `y` are variables
+which will represent how many columns to go over and how many rows to
+go down.  `letter` is also a variable; it's the letter to print.
+
+Try swapping `(y,x)` for `(x,y)`; what do you think will happen?
+
+The last part of our for loop's body is `x = x + 1`.  Why don't you
+try adding the line `y = y + 1`; what do you think will happen?
