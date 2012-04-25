@@ -7,12 +7,13 @@ for ourselves!
 
 # Setup
 
-1. Make sure you've followed the instructions on how to install
-Python.
-2. Go to [https://github.com/ruggeri/snake3][2] to download the zip
-file containing the project materials.  Extract the zip.
-3. In Terminal.app, run the `configure` script to install the Tornado
-web server:
+First, make sure you've followed the instructions on how to install
+Python.  Second, go to [https://github.com/ruggeri/snake3][2] to
+download the zip file containing the project materials.  Extract the
+zip.
+
+Next, in Terminal.app, run the `configure` script to install the
+Tornado web server:
 
     ~/projects/snake3$ ./configure
     Creating /Users/edwardruggeri/projects/snake3/lib/site.py
@@ -22,15 +23,15 @@ web server:
     Best match: tornado 2.2.1
     ...
 
-4. Go ahead and launch the snake program with the `run` script:
+Now go ahead and launch the snake program with the `run` script:
 
     ~/projects/snake3$ ./run
     Server started.
 
-5. Open `snake.html` in Chrome; you should see just a single
-"H" in the middle of the screen.  This is your snake!
+Open `snake.html` in Chrome; you should see just a single "H" in the
+middle of the screen.  This is your snake!
 
-6. Finally, open `snake.py` in your editor; this is where we'll write
+Finally, open `snake.py` in your editor; this is where we'll write
 your Python code!  Here's what it looks like now:
 
     from canvas import *
