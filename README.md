@@ -157,6 +157,8 @@ Try swapping `(y,x)` for `(x,y)`; what do you think will happen?
 The last part of our for loop's body is `x = x + 1`.  Why don't you
 try adding the line `y = y + 1`; what do you think will happen?
 
+Go ahead and change the list so your own name is printed!
+
 ## Drawing the border
 
 Let's draw a border for our Snake game along each of the edges.  Here,
