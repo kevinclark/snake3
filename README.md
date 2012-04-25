@@ -199,10 +199,10 @@ Our program basically consists of a loop that looks like this:
 2. Decide which direction to move the snake in
 3. Clear the grid
 4. Call our `move` function, giving us the direction to move
-  * We use put_char to add characters to the grid
-5. Print the grid out
-6. Pause a few moments
-7. Repeat from step 1
+5. Inside `move`, we use put_char to add characters to the grid
+6. Print the grid out
+7. Pause a few moments
+8. Repeat from step 1
 
 Let's see this in action.  We'll change our `move` function so that it
 wil only print "Hello!" every other time through the loop.  That will
