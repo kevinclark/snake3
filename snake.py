@@ -42,10 +42,19 @@ def put_char(pos, char):
 def draw(obj):
     obj.draw(CANVAS)
 
+KEY_BUFFER_MAX_SIZE = 4
+KEY_BUFFER = []
 def m(keys):
     direction = None
-    if keys and keys[0] in KEY_TO_DIR:
-        direction = KEY_TO_DIR[keys[0]]
+
+    for key in keys:
+        if len(KEY_BUFFER) == KEY_BUFFER_MAX_SIZE:
+            break
+        elif key in KEY_TO_DIR:
+            KEY_BUFFER.append(key)
+
+    if KEY_BUFFER:
+        direction = KEY_TO_DIR[KEY_BUFFER.pop(0)]
 
     CANVAS.clear()
     move(direction)
