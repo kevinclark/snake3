@@ -28,7 +28,7 @@ Now go ahead and launch the snake program with the `run` script:
     ~/projects/snake3$ ./run
     Server started.
 
-Open `snake.html` in Chrome; you should see just a single "H" in the
+Open `snake.html` in Chrome; you should see just the message "HELLO!" in the
 middle of the screen.  This is your snake!
 
 Finally, open `snake.py` in your editor; this is where we'll write
@@ -39,8 +39,17 @@ your Python code!  Here's what it looks like now:
     
     #### YOUR CODE GOES HERE:
     
-    snake = Snake((WIDTH / 2, HEIGHT / 2))
     def move(direction):
-        draw(snake)
+        hello_list = ['H', 'E', 'L', 'L', 'O', '!']
+        
+        x = 5
+        y = 5
+        for letter in hello_list:
+            put_char((x,y), letter)
+            x = x + 1
+
+# First steps
+
+
 
 [2]: https://github.com/ruggeri/snake3
