@@ -1,0 +1,2 @@
+mkdir lib 2> /dev/null
+PYTHONPATH=lib easy_install --install-dir=lib/ tornado
