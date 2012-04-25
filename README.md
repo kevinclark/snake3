@@ -156,3 +156,31 @@ Try swapping `(y,x)` for `(x,y)`; what do you think will happen?
 
 The last part of our for loop's body is `x = x + 1`.  Why don't you
 try adding the line `y = y + 1`; what do you think will happen?
+
+## Drawing the border
+
+Let's draw a border for our Snake game along each of the edges.  Here,
+I'll draw one side:
+
+    def move(direction):
+        for y in range(HEIGHT):
+            put_char((0, y), "W")
+
+I'm putting a "W" for "Wall".  Here's a new couple new things.
+`HEIGHT` is a variable with the number of rows; there's another
+variable you can use named `WIDTH` for the number of columns.
+
+What is this `range` guy?  He's another function, and you can see
+`range` is being given the `HEIGHT`.  `range(HEIGHT)` returns a list
+of numbers up to `HEIGHT`:
+
+    >>> HEIGHT
+    30
+    >>> range(HEIGHT)
+    [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29]
+
+When we write `for y in range(HEIGHT):`, we're saying that we should
+run the body 30 times, for `y = 0`, `y = 1`, `y = 2`, for each of the
+heights.
+
+Can you add loops to print the other three borders?
