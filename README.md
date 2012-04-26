@@ -30,7 +30,7 @@ Now go ahead and launch the snake program with the `run` script:
     Server started.
 
 Open `snake.html` in Chrome; you should see just the message "HELLO!" in the
-middle of the screen.  This is your snake!
+middle of the screen.  That means everything is working!
 
 Finally, open `snake.py` in your editor; this is where we'll write
 your Python code!  Here's what it looks like now:
