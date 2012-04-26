@@ -103,12 +103,11 @@ Okay, let's see how to say hello to each of my cats.
 
 What all is this?  The first line defines the variable `cats` and sets
 it equal to my list of cats.  Next comes `for cat in cats:`; this
-tells Python to loop through each element in `cats`, each time
-assigning the value to a new variable `cat`.  The last part,
-`print("Hello " + cat + "!")` is called the *body*.  We run the
-commands in the body for each cat in the list.  Notice that `cat` is
-different every time; it's set to each of my cats in the order of the
-list.
+tells Python to loop through each item in `cats`, each time assigning
+the value to a new variable `cat`.  The last part, `print("Hello " +
+cat + "!")` is called the *body*.  We run the commands in the body for
+each cat in the list.  Notice that `cat` is different every time; it's
+set to each of my cats in the order of the list.
 
 Okay!  Now you try!  Use a for loop in IDLE to greet some of your
 friends!
