@@ -78,7 +78,7 @@ of your friends.  Assign the list to the variable `friends`.
 
 ## Printing and for loops
 
-Let's say hello to your friends.  Here's how we could say hello to a
+Let's say hello to your friends!  Here's how we could say hello to a
 single friend:
 
     >>> print("Hey Joe!")
