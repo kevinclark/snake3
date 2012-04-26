@@ -174,7 +174,8 @@ I'll draw one side:
 
 I'm putting a "W" for "Wall".  Here's a couple new things.  `HEIGHT`
 is a variable with the number of rows; there's another variable you
-can use named `WIDTH` for the number of columns.
+can use named `WIDTH` for the number of columns.  You can find where
+`HEIGHT` and `WIDTH` are defined in `canvas.py`.
 
 What is this `range` guy?  He's another function, and you can see
 `range` is being given the `HEIGHT`.  `range(HEIGHT)` returns a list
