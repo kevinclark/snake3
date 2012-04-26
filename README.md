@@ -198,7 +198,7 @@ So far we've ignored the line `def move(direction):`.  This is defines
 our own function, `move`; so far we've been editing the body.  `move`
 takes a single option, `direction`, which we haven't used yet.
 
-Our program basically consists of a loop that looks like this:
+Our program consists of a big loop that looks like this:
 
 1. Read some keys from the keyboard
 2. Decide which direction to move the snake in
@@ -209,27 +209,26 @@ Our program basically consists of a loop that looks like this:
 7. Pause a few moments
 8. Repeat from step 1
 
-Let's see this in action.  We'll change our `move` function so that it
-wil only print "Hello!" every other time through the loop.  That will
-make it look like "Hello!" is blinking.
-
+Let's see this in action.  Let's print some random "X"s to the screen.
 Here's how to do it:
 
-    BLINK = True
     def move(direction):
-        hello_list = ['H', 'E', 'L', 'L', 'O', '!']
-        global BLINK
-        
-        if BLINK:
-            BLINK = False
-            
-            x = 5
-            y = 5
-            for letter in hello_list:
-                put_char((x,y), letter)
-                x = x + 1
-        else:
-            BLINK = True
+      x = randint(0, WIDTH)
+      y = randint(0, HEIGHT)
+      put_char((x,y), "X")
+
+`randint` is another function; `randit(0, WIDTH)` chooses a random
+number between 0 and `WIDTH`.  So we choose two random numbers, and
+put an "X" at that point.
+
+Go ahead and try out the change!  See how the "X" jumps around?
+That's because each time `move` is run, we draw a new random "X".
+
+Now you try!  Use a for loop to draw 100 random "X"s!
+
+## State
+
+*THIS PART IS A WORK IN PROGRESS*
 
 We use `if` and `else` for the first time here.  The first part of the
 `if` runs only if `BLINK` is `True`, otherwise, the `else` part is

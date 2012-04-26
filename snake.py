@@ -1,13 +1,11 @@
 from canvas import *
+from random import *
 from snake_lib import *
 
 #### YOUR CODE GOES HERE:
 
 def move(direction):
-    hello_list = ['H', 'E', 'L', 'L', 'O', '!']
-
-    x = 5
-    y = 5
-    for letter in hello_list:
-        put_char((x,y), letter)
-        x = x + 1
+    for i in range(100):
+        x = randint(0, WIDTH)
+        y = randint(0, HEIGHT)
+        put_char((x,y), "X")
