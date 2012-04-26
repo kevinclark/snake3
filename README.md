@@ -190,7 +190,7 @@ When we write `for y in range(HEIGHT):`, we're saying that we should
 run the body 30 times, for `y = 0`, `y = 1`, `y = 2`, for each of the
 heights.
 
-Can you add loops to print the other three borders?
+Go ahead and add loops to print the other three borders!
 
 ## Defining functions and blinking text
 
