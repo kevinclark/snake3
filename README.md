@@ -61,7 +61,7 @@ To the right of the `=` is a *list* of items.  We can make lots of
 different lists in Python:
 
     [0, 1, 2, 3]
-    ['John', 'Paul', 'Geroge', 'Ringo']
+    ['John', 'Paul', 'George', 'Ringo']
 
 Lists start with a `[` and end with a `]`.  Then we list each item,
 separated by commas.
