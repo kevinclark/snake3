@@ -144,7 +144,7 @@ The key here is the function `put_char`.  This prints a letter, or
 
 This is a five-by-five grid; I've marked three points: `P`, `Q`, and
 `Q`.  `P` is two columns over and four rows down; we say that it is at
-position `(4, 2)`.  `Q` is 5 columns over and 2 rows down; we say its
+position `(2, 4)`.  `Q` is 5 columns over and 2 rows down; we say its
 position is `(5, 2)`.  What position is `R` at.
 
 We can tell our program where to draw letters by giving `put_char` a
