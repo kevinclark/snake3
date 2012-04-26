@@ -69,7 +69,7 @@ separated by commas.
 The `hello_list` part to the left of the `=` is a *variable* name.  By
 assigning a *value* to a variable, we can use that name later on.  So
 
-    beatles = ['John', 'Paul', 'Geroge', 'Ringo']
+    beatles = ['John', 'Paul', 'George', 'Ringo']
 
 lets us use the name `beatles` to mean `['John', ...]` later on.
 
