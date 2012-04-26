@@ -129,13 +129,18 @@ The key here is the function `put_char`.  This prints a letter, or
 *character* at a specific location.  The location is a point in the
 *grid*.  Here's an example of a grid:
 
-     0 1 2 3 4 5
-    0
-    1
-    2          Q
-    3
-    4    P
-    5      R
+     |0|1|2|3|4|5
+    0| | | | | | 
+    -------------
+    1| | | | | | 
+    -------------
+    2| | | | | |Q
+    -------------
+    3| | | | | | 
+    -------------
+    4| | |P| | | 
+    -------------
+    5| | | |R| | 
 
 This is a five-by-five grid; I've marked three points: `P`, `Q`, and
 `Q`.  `P` is two columns over and four rows down; we say that it is at
