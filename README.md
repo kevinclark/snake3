@@ -143,7 +143,7 @@ The key here is the function `put_char`.  This prints a letter, or
     5| | | |R| | 
 
 This is a five-by-five grid; I've marked three points: `P`, `Q`, and
-`Q`.  `P` is two columns over and four rows down; we say that it is at
+`R`.  `P` is two columns over and four rows down; we say that it is at
 position `(2, 4)`.  `Q` is 5 columns over and 2 rows down; we say its
 position is `(5, 2)`.  What position is `R` at?
 
