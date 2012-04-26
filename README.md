@@ -172,9 +172,9 @@ I'll draw one side:
         for y in range(HEIGHT):
             put_char((0, y), "W")
 
-I'm putting a "W" for "Wall".  Here's a new couple new things.
-`HEIGHT` is a variable with the number of rows; there's another
-variable you can use named `WIDTH` for the number of columns.
+I'm putting a "W" for "Wall".  Here's a couple new things.  `HEIGHT`
+is a variable with the number of rows; there's another variable you
+can use named `WIDTH` for the number of columns.
 
 What is this `range` guy?  He's another function, and you can see
 `range` is being given the `HEIGHT`.  `range(HEIGHT)` returns a list
