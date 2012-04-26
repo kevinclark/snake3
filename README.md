@@ -8,7 +8,7 @@ for ourselves!
 # Setup
 
 First, make sure you've followed the instructions on how to install
-Python.  Second, go to [https://github.com/ruggeri/snake-game/downloads][2] to
+Python.  Second, go to [https://github.com/ruggeri/snake3/downloads][2] to
 download the zip file containing the project materials.  Extract the
 zip.
 [2]: https://github.com/ruggeri/snake3
